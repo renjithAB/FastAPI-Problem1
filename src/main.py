@@ -33,7 +33,6 @@ async def create(
         password=hashed_password,
         phone=phone,
     )
-    print(user_object)
     db.add(user_object)
     db.commit()
     file_content = await file.read()
